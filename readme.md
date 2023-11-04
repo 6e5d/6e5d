@@ -1,3 +1,4 @@
-* I do not use git vcs. All projects here are mirrored by API and force pushed on update. So do not refer to any source code here (lines, revisions, etc.)
+* I do not use git vcs or github. All projects here are mirrored by API. Use the email address to report any bug. The reply SMTP server must not have DKIM/SPF record check.
 * All projects here are designed to build and run without installation, just download projects and dependencies in `.lpat/deps.txt` (recursively) in the same directory.
-* For python projects you need to implement a global `importer.importer` function to locate relative library. It can be easily implemented with the builtin importlib.
+* For python projects, you need to implement a global `importer.importer(relative_path, __FILE__)` function to locate relative library. It can be easily implemented with the builtin importlib.
+* For C projects, you can use the [nomake](https://github.com/6e5d/nomake) project(usage: `nomake <project_root>`) and it will automatically build all dependencies into shared library. You may have to generate some missing files(e.g. by wayland-scanner, glslc) manually. Hopefully everything will handled automatically in the future.
