@@ -1,5 +1,5 @@
 Note: it seems that github may take down your account any time as long as they think it is not "secure".
-I will start hosting projects on both my homepage and github. At that time the homepage's mirror will be preferred.
+My homepage mirror(of latest snapshot) is also available at <https://6e5d.com/lpat>.
 
 * Projects are converted and mirrored from other VCS/server. Use mail server(PORT 25, STARTTLS+PTR check required) for discussions.
 * All projects do not have license files. The best way to reuse and share my code is to host it on tor/i2p.
